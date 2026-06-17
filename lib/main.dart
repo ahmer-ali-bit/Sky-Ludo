@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:luddo_app/coin_offer.dart';
-
-import 'modes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter luddo app',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: const Modes(),
+      home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
