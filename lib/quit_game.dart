@@ -57,17 +57,20 @@ class _QuitGameState extends State<QuitGame> {
 
                   SizedBox(height: height * 0.02),
 
-                  Text(
-                    "YOUR OPPONENT WILL WIN IF YOU QUIT!",
+                  Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "YOUR OPPONENT WILL WIN IF YOU QUIT!",
 
-                    style: GoogleFonts.bangers(
-                      fontSize: 22,
-                      color: Colors.white,
-                      letterSpacing: 1.5,
+                      style: GoogleFonts.bangers(
+                        fontSize: 22,
+                        color: Colors.white,
+                        letterSpacing: 1.5,
+                      ),
                     ),
                   ),
 
-                  SizedBox(height: height * 0.51),
+                  Expanded(child: SizedBox()),
 
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -220,6 +223,7 @@ class _QuitGameState extends State<QuitGame> {
                       ),
                     ],
                   ),
+                  SizedBox(height: height * 0.02),
                 ],
               ),
             ),
