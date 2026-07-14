@@ -1,12 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:luddo_app/coin_offer.dart';
-import 'package:luddo_app/diamonds.dart';
-import 'package:luddo_app/facebook_friends.dart';
-import 'package:luddo_app/modes.dart';
 
-import 'package:luddo_app/notice.dart';
-import 'package:luddo_app/quit_game.dart';
-import 'package:luddo_app/tournament_win_2.dart';
+import 'package:luddo_app/join_room.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter luddo app',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: Diamonds(),
+      home: Joinroom(),
     );
   }
 }
