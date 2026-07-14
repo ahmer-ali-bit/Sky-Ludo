@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'package:google_fonts/google_fonts.dart';
+
 
 class SelectGame extends StatefulWidget {
   const SelectGame({super.key});
@@ -9,6 +11,7 @@ class SelectGame extends StatefulWidget {
 }
 
 class _SelectGameState extends State<SelectGame> {
+
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
@@ -300,3 +303,4 @@ class _SelectGameState extends State<SelectGame> {
     );
   }
 }
+
