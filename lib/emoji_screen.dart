@@ -122,8 +122,7 @@ class _EmojiScreenState extends State<EmojiScreen> {
                 ),
               ),
 
-              SizedBox(height: height * 0.03),
-
+              // SizedBox(height: height * 0.03),
               ClipPath(
                 clipper: Emoji(),
                 child: Container(

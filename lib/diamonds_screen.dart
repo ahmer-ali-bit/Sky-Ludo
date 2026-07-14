@@ -20,6 +20,7 @@ class _DiamondsScreenState extends State<DiamondsScreen> {
           width: width,
           color: const Color.fromARGB(255, 188, 185, 185),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -88,7 +89,7 @@ class _DiamondsScreenState extends State<DiamondsScreen> {
               SizedBox(height: height * 0.03),
 
               SizedBox(
-                height: height * 0.73,
+                height: height * 0.69,
                 width: width * 0.9,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,

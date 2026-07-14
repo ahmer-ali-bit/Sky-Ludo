@@ -69,7 +69,7 @@ class _ModesState extends State<Modes> {
                       ),
                     ),
 
-                    SizedBox(height: height * 0.08),
+                    SizedBox(height: height * 0.05),
 
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -118,7 +118,7 @@ class _ModesState extends State<Modes> {
                       ],
                     ),
 
-                    SizedBox(
+                    Container(
                       height: height * 0.7,
                       width: width,
                       // decoration: BoxDecoration(color: Colors.amber),
