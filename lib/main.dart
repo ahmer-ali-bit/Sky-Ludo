@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:luddo_app/join_room.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -14,8 +14,30 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter luddo app',
+
+      theme: ThemeData(
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
+      ),
+      home: Notice()
+
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
       home: Joinroom(),
+
     );
   }
 }

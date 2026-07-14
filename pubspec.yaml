@@ -32,7 +32,10 @@ dependencies:
     sdk: flutter
   google_fonts: ^6.2.1
   flutter_screenutil: ^5.9.3
+<<<<<<< HEAD
+=======
   
+>>>>>>> 17637ce8e3042194c9fcae9d3a6f18e6cf1ac1e6
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -65,7 +68,7 @@ flutter:
   assets:
     - images/
 
-    - images/
+   
 
   #   - images/a_dot_ham.jpeg
 
