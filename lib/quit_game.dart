@@ -70,10 +70,11 @@ class _QuitGameState extends State<QuitGame> {
                     ),
                   ),
 
-                  Expanded(child: SizedBox()),
+                  Expanded(child: Container()),
+                  Container(
+                    height: height * 0.06,
+                    width: width,
 
-                  Padding(
-                    padding: EdgeInsets.only(bottom: height * 0.015),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
