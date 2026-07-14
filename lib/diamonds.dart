@@ -757,7 +757,7 @@ late double width;
                      
                       children: [
                         SizedBox(width: width*0.1,),
-                        Text("70 GEMS",style:GoogleFonts.bangers(fontStyle:FontStyle.normal,letterSpacing: width*0.005,
+                        Text("05 DAYS",style:GoogleFonts.bangers(fontStyle:FontStyle.normal,letterSpacing: width*0.005,
                            fontSize: width*0.03,
                                         color: Colors.deepOrange,fontWeight: FontWeight.bold),),
                       ],
@@ -1791,7 +1791,7 @@ late double width;
             ),
           ),
           SizedBox(height: height*0.02,),
-          Container(
+           Container(
             height: height*0.05,
             width: width*0.87,
       child: Stack(
@@ -1813,7 +1813,7 @@ late double width;
                      
                       children: [
                         SizedBox(width: width*0.1,),
-                        Text("60 GEMS",style:GoogleFonts.bangers(fontStyle:FontStyle.normal,letterSpacing: width*0.005,
+                        Text("70 GEMS",style:GoogleFonts.bangers(fontStyle:FontStyle.normal,letterSpacing: width*0.005,
                            fontSize: width*0.03,
                                         color: Colors.deepOrange,fontWeight: FontWeight.bold),),
                       ],
@@ -1866,16 +1866,13 @@ late double width;
            Positioned
            
            (
-            top: height*0.1,right: width*0.74,
+            top: height*0.00,right: width*0.74,
             child: Container(
               height: height*0.05,
               width: width*0.15,
               
               decoration: BoxDecoration(
-                
-                image: DecorationImage(
-                      fit: BoxFit.cover,
-                  image: AssetImage('images/mic.png'))
+                image: DecorationImage(image: AssetImage('images/mic.png'))
               ),
               )
               
@@ -1887,6 +1884,7 @@ late double width;
               borderRadius: BorderRadius.circular(width*0.02)
             ),
           ),
+         
           SizedBox(height: height*0.02,),
           Container(
             height: height*0.05,
@@ -1910,7 +1908,7 @@ late double width;
                      
                       children: [
                         SizedBox(width: width*0.1,),
-                        Text("70 GEMS",style:GoogleFonts.bangers(fontStyle:FontStyle.normal,letterSpacing: width*0.005,
+                        Text("07 DAYS",style:GoogleFonts.bangers(fontStyle:FontStyle.normal,letterSpacing: width*0.005,
                            fontSize: width*0.03,
                                         color: Colors.deepOrange,fontWeight: FontWeight.bold),),
                       ],
@@ -2004,7 +2002,7 @@ late double width;
                      
                       children: [
                         SizedBox(width: width*0.1,),
-                        Text("80 GEMS",style:GoogleFonts.bangers(fontStyle:FontStyle.normal,letterSpacing: width*0.005,
+                        Text("10 DAYS",style:GoogleFonts.bangers(fontStyle:FontStyle.normal,letterSpacing: width*0.005,
                            fontSize: width*0.03,
                                         color: Colors.deepOrange,fontWeight: FontWeight.bold),),
                       ],
