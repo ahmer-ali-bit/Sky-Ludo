@@ -42,7 +42,7 @@ class _ChatScreenState extends State<ChatScreen> {
                           style: GoogleFonts.bangers(
                             fontSize: 12,
                             letterSpacing: 1.5,
-                            color: const Color.fromARGB(255, 4, 45, 114),
+                            color: const Color.fromARGB(255, 2, 23, 59),
                           ),
                         ),
                       ),
@@ -77,7 +77,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   Padding(
                     padding: const EdgeInsets.only(bottom: 5),
                     child: Container(
-                      height: height * 0.07,
+                      height: height * 0.06,
                       width: width * 0.85,
                       decoration: BoxDecoration(
                         color: const Color.fromARGB(255, 14, 52, 84),
@@ -90,7 +90,7 @@ class _ChatScreenState extends State<ChatScreen> {
                           Center(
                             child: Center(
                               child: Container(
-                                height: height * 0.06,
+                                height: height * 0.05,
                                 width: width * 0.6,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(7),
@@ -123,7 +123,7 @@ class _ChatScreenState extends State<ChatScreen> {
                           ),
 
                           Container(
-                            height: height * 0.06,
+                            height: height * 0.05,
                             width: width * 0.2,
                             decoration: BoxDecoration(
                               gradient: LinearGradient(
@@ -144,7 +144,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                 Text(
                                   "SEND",
                                   style: GoogleFonts.bangers(
-                                    fontSize: 18,
+                                    fontSize: width * 0.035,
                                     color: const Color.fromARGB(
                                       255,
                                       19,
@@ -158,7 +158,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                 Text(
                                   "0/10",
                                   style: GoogleFonts.bangers(
-                                    fontSize: 15,
+                                    fontSize: width * 0.03,
                                     color: Colors.white,
                                     letterSpacing: 1.5,
                                   ),
