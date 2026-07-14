@@ -37,75 +37,70 @@ class _MyWidgetState extends State<Joinroom> {
               ),
               Column(
                 children: [
-                  SizedBox(
-                    height: height * 0.2,
-                    width: width,
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: height * 0.1,
+                        width: width,
 
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        SizedBox(
-                          height: height * 0.1,
-                          width: width,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Row(
+                              children: [
+                                SizedBox(width: width * 0.03),
+                                Container(
+                                  height: height * 0.032,
+                                  width: width * 0.07,
+                                  decoration: BoxDecoration(
+                                    color: Colors.blueAccent,
 
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Row(
-                                children: [
-                                  SizedBox(width: width * 0.03),
-                                  Container(
-                                    height: height * 0.032,
-                                    width: width * 0.07,
-                                    decoration: BoxDecoration(
-                                      color: Colors.blueAccent,
-
-                                      borderRadius: BorderRadius.circular(
-                                        width * 0.02,
-                                      ),
-                                      border: Border.all(
-                                        color: Colors.cyan,
-                                        width: width * 0.006,
-                                      ),
-                                      boxShadow: [
-                                        BoxShadow(
-                                          color: Colors.cyan.withValues(
-                                            alpha: 0.8,
-                                          ),
-                                          blurRadius: 10,
-                                          spreadRadius: 1,
-                                        ),
-                                        BoxShadow(
-                                          color: Colors.cyan.withValues(
-                                            alpha: 0.5,
-                                          ),
-                                          blurRadius: 25,
-                                          spreadRadius: 5,
-                                        ),
-                                        BoxShadow(
-                                          color: Colors.cyan.withValues(
-                                            alpha: 0.3,
-                                          ),
-                                          blurRadius: 40,
-                                          spreadRadius: 10,
-                                        ),
-                                      ],
+                                    borderRadius: BorderRadius.circular(
+                                      width * 0.02,
                                     ),
-                                    child: Center(
-                                      child: Icon(
-                                        Icons.undo_rounded,
-                                        size: width * 0.04,
-                                        color: Colors.cyan,
+                                    border: Border.all(
+                                      color: Colors.cyan,
+                                      width: width * 0.006,
+                                    ),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.cyan.withValues(
+                                          alpha: 0.8,
+                                        ),
+                                        blurRadius: 10,
+                                        spreadRadius: 1,
                                       ),
+                                      BoxShadow(
+                                        color: Colors.cyan.withValues(
+                                          alpha: 0.5,
+                                        ),
+                                        blurRadius: 25,
+                                        spreadRadius: 5,
+                                      ),
+                                      BoxShadow(
+                                        color: Colors.cyan.withValues(
+                                          alpha: 0.3,
+                                        ),
+                                        blurRadius: 40,
+                                        spreadRadius: 10,
+                                      ),
+                                    ],
+                                  ),
+                                  child: Center(
+                                    child: Icon(
+                                      Icons.undo_rounded,
+                                      size: width * 0.04,
+                                      color: Colors.cyan,
                                     ),
                                   ),
-                                ],
-                              ),
-                            ],
-                          ),
+                                ),
+                              ],
+                            ),
+                          ],
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                   SizedBox(
                     height: height * 0.1,

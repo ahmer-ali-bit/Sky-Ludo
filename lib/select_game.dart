@@ -151,7 +151,6 @@ class _SelectGameState extends State<SelectGame> {
                             Text(
                               "QUICK",
                               style: GoogleFonts.bangers(
-                                fontStyle: FontStyle.italic,
                                 letterSpacing: 5,
                                 fontSize: 35,
                                 color: const Color.fromARGB(255, 252, 231, 195),
@@ -201,7 +200,6 @@ class _SelectGameState extends State<SelectGame> {
                             Text(
                               "CLASSIC",
                               style: GoogleFonts.bangers(
-                                fontStyle: FontStyle.italic,
                                 letterSpacing: 5,
                                 fontSize: 35,
                                 color: Colors.white,
@@ -251,7 +249,6 @@ class _SelectGameState extends State<SelectGame> {
                             Text(
                               "MASK MODE",
                               style: GoogleFonts.bangers(
-                                fontStyle: FontStyle.italic,
                                 letterSpacing: 5,
                                 fontSize: 35,
                                 color: const Color.fromARGB(255, 243, 217, 140),
@@ -285,7 +282,6 @@ class _SelectGameState extends State<SelectGame> {
                           child: Text(
                             "CREATE ROOM",
                             style: GoogleFonts.bangers(
-                              fontStyle: FontStyle.italic,
                               letterSpacing: 3,
                               fontSize: 30,
                               color: Colors.white,

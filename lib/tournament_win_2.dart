@@ -540,7 +540,7 @@ class _TournamentWin2State extends State<TournamentWin2> {
               ),
 
               Positioned(
-                top: 745,
+                top: height * 0.838,
                 left: 20,
                 child: Row(
                   children: [
