@@ -9,12 +9,11 @@ class Notice extends StatefulWidget {
 }
 
 class _NoticeState extends State<Notice> {
-   var height,width;
+  var height, width;
   @override
-   
   Widget build(BuildContext context) {
-       height=MediaQuery.of(context).size.height;
-    width=MediaQuery.of(context).size.width;
+    height = MediaQuery.of(context).size.height;
+    width = MediaQuery.of(context).size.width;
     return Scaffold(
 body: Center(
   child: SafeArea(child: 
@@ -45,10 +44,7 @@ body: Center(
      children: [
                  Positioned(
                   left: width*0.4,top: height*0.3,
-                  child: Text("NOTICE!",
-                  style:GoogleFonts.bangers
-                  (fontStyle:FontStyle.normal,letterSpacing:
-                   width*0.005,fontSize: width*0.06, color: Colors.cyan),)),
+                  child: Text("NOTICE!",style:GoogleFonts.bangers(fontStyle:FontStyle.normal,letterSpacing: width*0.005,fontSize: width*0.06, color: Colors.cyan),)),
     Positioned(top: width*0.5,left: width*0.035,
       child: Container(
         height: height*0.4,width: width*0.93,
@@ -74,19 +70,19 @@ body: Center(
                   left: width*0.4,top: height*0.3,
                   child: Text("NOTICE!",style:GoogleFonts.bangers(fontStyle:FontStyle.normal,letterSpacing: width*0.005,fontSize: width*0.06, color: Colors.cyan),)),
                                    Positioned(
-                  left: width*0.24,top: height*0.45,
+                  left: width*0.2,top: height*0.45,
                   child: Text("ROOM NOT FOUND/MAY BE VERSION",
                   style:GoogleFonts.bangers
                   (fontStyle:FontStyle.normal,letterSpacing: width*0.005,
                  color: Colors.white),)),
                                    Positioned(
-                  left: width*0.24,top: height*0.47,
+                  left: width*0.2,top: height*0.47,
                   child: Text("MISMATCH/ROOM ALREADY STARTED",
                   style:GoogleFonts.bangers
                   (fontStyle:FontStyle.normal,letterSpacing: width*0.005,
                  color: Colors.white),)),
                                    Positioned(
-                  left: width*0.45,top: height*0.608,
+                  left: width*0.45,top: height*0.66,
                   child: Text("OK",
                   style:GoogleFonts.bangers
                   (fontStyle:FontStyle.normal,letterSpacing: width*0.005,
