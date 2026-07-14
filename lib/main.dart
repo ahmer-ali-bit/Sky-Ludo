@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:luddo_app/diamonds.dart' show Diamonds;
 
-
-
+import 'package:luddo_app/notice.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,22 +32,13 @@ class MyApp extends StatelessWidget {
         
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home:Diamonds()
+      home: Notice()
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
-
-  
-  
-  
-
-  
-  
-  
-  
 
   final String title;
 
@@ -58,23 +47,13 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-var height,width;
+  var height, width;
 
   @override
-  
   Widget build(BuildContext context) {
-    height=MediaQuery.of(context).size.height;
-    width=MediaQuery.of(context).size.width;
-    
-    
-    
-    
-    
-    
-    return Scaffold(
+    height = MediaQuery.of(context).size.height;
+    width = MediaQuery.of(context).size.width;
 
-      
- 
-    );
+    return Scaffold();
   }
 }

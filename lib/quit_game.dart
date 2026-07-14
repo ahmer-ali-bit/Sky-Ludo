@@ -57,6 +57,7 @@ class _QuitGameState extends State<QuitGame> {
 
                   SizedBox(height: height * 0.02),
 
+
                   Text(
                     textAlign: TextAlign.center,
                     "YOUR OPPONENT WILL WIN IF YOU QUIT!",
@@ -65,7 +66,7 @@ class _QuitGameState extends State<QuitGame> {
                       fontSize: width*0.05,
                       color: Colors.white,
                       letterSpacing: 1.5,
-                    ),
+),
                   ),
 
                   Expanded(child: Container()),
