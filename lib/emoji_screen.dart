@@ -80,7 +80,7 @@ class _EmojiScreenState extends State<EmojiScreen> {
               SizedBox(height: height * 0.03),
 
               ClipPath(
-                clipper: NewEmoji(),
+                clipper: Emoji(),
                 child: Container(
                   height: height * 0.06,
                   width: width * 0.5,
@@ -125,7 +125,7 @@ class _EmojiScreenState extends State<EmojiScreen> {
               SizedBox(height: height * 0.03),
 
               ClipPath(
-                clipper: NewEmoji(),
+                clipper: Emoji(),
                 child: Container(
                   height: height * 0.06,
                   width: width * 0.5,
@@ -173,36 +173,7 @@ class _EmojiScreenState extends State<EmojiScreen> {
   }
 }
 
-class NewEmoji extends CustomClipper<Path> {
-  @override
-  Path getClip(Size size) {
-    var height = size.height;
-    var width = size.width;
-
-    Path path = Path();
-
-    path.moveTo(0, height * 0.5);
-
-    path.lineTo(width * 0.15, 0);
-
-    path.lineTo(width * 0.85, 0);
-
-    path.lineTo(width, height * 0.5);
-
-    path.lineTo(width * 0.85, height);
-
-    path.lineTo(width * 0.15, height);
-
-    path.close();
-
-    return path;
-  }
-
-  @override
-  bool shouldReclip(CustomClipper<Path> oldClipper) => false;
-}
-
-class OldEmoji extends CustomClipper<Path> {
+class Emoji extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
     var height = size.height;
