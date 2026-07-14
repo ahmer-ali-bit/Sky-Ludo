@@ -117,8 +117,8 @@ class _CoinOfferState extends State<CoinOffer> {
               ),
 
               Positioned(
-                top: 230,
-                left: 345,
+                top: width * 0.53,
+                left: width * 0.83,
                 child: Container(
                   height: height * 0.1,
                   width: width * 0.1,

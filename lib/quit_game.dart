@@ -57,168 +57,177 @@ class _QuitGameState extends State<QuitGame> {
 
                   SizedBox(height: height * 0.02),
 
-                  Text(
-                    "YOUR OPPONENT WILL WIN IF YOU QUIT!",
+                  Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "YOUR OPPONENT WILL WIN IF YOU QUIT!",
 
-                    style: GoogleFonts.bangers(
-                      fontSize: 22,
-                      color: Colors.white,
-                      letterSpacing: 1.5,
+                      style: GoogleFonts.bangers(
+                        fontSize: 22,
+                        color: Colors.white,
+                        letterSpacing: 1.5,
+                      ),
                     ),
                   ),
 
-                  SizedBox(height: height * 0.51),
+                  Expanded(child: SizedBox()),
 
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Container(
-                        height: height * 0.04,
-                        width: width * 0.15,
+                  Padding(
+                    padding: EdgeInsets.only(bottom: height * 0.015),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Container(
+                          height: height * 0.04,
+                          width: width * 0.15,
 
-                        decoration: BoxDecoration(
-                          border: Border.all(color: Colors.cyan),
-                          borderRadius: BorderRadius.circular(10),
-                          color: const Color.fromARGB(255, 41, 18, 104),
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.cyan),
+                            borderRadius: BorderRadius.circular(10),
+                            color: const Color.fromARGB(255, 41, 18, 104),
 
-                          boxShadow: [
-                            BoxShadow(
-                              color: const Color(
-                                0xFF00D9FF,
-                              ).withValues(alpha: 0.9),
-                              spreadRadius: 1,
-                              blurRadius: 8,
-                            ),
-                          ],
-                        ),
+                            boxShadow: [
+                              BoxShadow(
+                                color: const Color(
+                                  0xFF00D9FF,
+                                ).withValues(alpha: 0.9),
+                                spreadRadius: 1,
+                                blurRadius: 8,
+                              ),
+                            ],
+                          ),
 
-                        child: Center(
-                          child: Text(
-                            "YES",
+                          child: Center(
+                            child: Text(
+                              "YES",
 
-                            style: GoogleFonts.bangers(
-                              color: Colors.white,
-                              fontSize: 20,
-                              letterSpacing: 1.5,
+                              style: GoogleFonts.bangers(
+                                color: Colors.white,
+                                fontSize: 20,
+                                letterSpacing: 1.5,
+                              ),
                             ),
                           ),
                         ),
-                      ),
 
-                      Container(
-                        height: height * 0.04,
-                        width: width * 0.1,
+                        Container(
+                          height: height * 0.04,
+                          width: width * 0.1,
 
-                        decoration: BoxDecoration(
-                          border: Border.all(color: Colors.cyan),
-                          borderRadius: BorderRadius.circular(10),
-                          color: const Color.fromARGB(255, 41, 18, 104),
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.cyan),
+                            borderRadius: BorderRadius.circular(10),
+                            color: const Color.fromARGB(255, 41, 18, 104),
 
-                          boxShadow: [
-                            BoxShadow(
-                              color: const Color(
-                                0xFF00D9FF,
-                              ).withValues(alpha: 0.9),
-                              spreadRadius: 1,
-                              blurRadius: 8,
-                            ),
-                          ],
-                        ),
-
-                        child: Center(
-                          child: Icon(
-                            Icons.volume_off,
-                            color: Colors.cyanAccent,
+                            boxShadow: [
+                              BoxShadow(
+                                color: const Color(
+                                  0xFF00D9FF,
+                                ).withValues(alpha: 0.9),
+                                spreadRadius: 1,
+                                blurRadius: 8,
+                              ),
+                            ],
                           ),
-                        ),
-                      ),
 
-                      Container(
-                        height: height * 0.04,
-                        width: width * 0.1,
-
-                        decoration: BoxDecoration(
-                          border: Border.all(color: Colors.cyan),
-                          borderRadius: BorderRadius.circular(10),
-                          color: const Color.fromARGB(255, 41, 18, 104),
-
-                          boxShadow: [
-                            BoxShadow(
-                              color: const Color(
-                                0xFF00D9FF,
-                              ).withValues(alpha: 0.9),
-                              spreadRadius: 1,
-                              blurRadius: 8,
-                            ),
-                          ],
-                        ),
-
-                        child: Center(
-                          child: Icon(Icons.campaign, color: Colors.cyanAccent),
-                        ),
-                      ),
-
-                      Container(
-                        height: height * 0.04,
-                        width: width * 0.1,
-
-                        decoration: BoxDecoration(
-                          border: Border.all(color: Colors.cyan),
-                          borderRadius: BorderRadius.circular(10),
-                          color: const Color.fromARGB(255, 41, 18, 104),
-
-                          boxShadow: [
-                            BoxShadow(
-                              color: const Color(
-                                0xFF00D9FF,
-                              ).withValues(alpha: 0.9),
-                              spreadRadius: 1,
-                              blurRadius: 8,
-                            ),
-                          ],
-                        ),
-
-                        child: Center(
-                          child: Icon(
-                            Icons.music_off,
-                            color: Colors.cyanAccent,
-                          ),
-                        ),
-                      ),
-
-                      Container(
-                        height: height * 0.04,
-                        width: width * 0.15,
-
-                        decoration: BoxDecoration(
-                          border: Border.all(color: Colors.cyan),
-                          borderRadius: BorderRadius.circular(10),
-                          color: const Color.fromARGB(255, 41, 18, 104),
-
-                          boxShadow: [
-                            BoxShadow(
-                              color: const Color(
-                                0xFF00D9FF,
-                              ).withValues(alpha: 0.9),
-                              spreadRadius: 1,
-                              blurRadius: 8,
-                            ),
-                          ],
-                        ),
-
-                        child: Center(
-                          child: Text(
-                            "NO",
-
-                            style: GoogleFonts.bangers(
-                              color: Colors.white,
-                              fontSize: 20,
-                              letterSpacing: 1.5,
+                          child: Center(
+                            child: Icon(
+                              Icons.volume_off,
+                              color: Colors.cyanAccent,
                             ),
                           ),
                         ),
-                      ),
-                    ],
+
+                        Container(
+                          height: height * 0.04,
+                          width: width * 0.1,
+
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.cyan),
+                            borderRadius: BorderRadius.circular(10),
+                            color: const Color.fromARGB(255, 41, 18, 104),
+
+                            boxShadow: [
+                              BoxShadow(
+                                color: const Color(
+                                  0xFF00D9FF,
+                                ).withValues(alpha: 0.9),
+                                spreadRadius: 1,
+                                blurRadius: 8,
+                              ),
+                            ],
+                          ),
+
+                          child: Center(
+                            child: Icon(
+                              Icons.campaign,
+                              color: Colors.cyanAccent,
+                            ),
+                          ),
+                        ),
+
+                        Container(
+                          height: height * 0.04,
+                          width: width * 0.1,
+
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.cyan),
+                            borderRadius: BorderRadius.circular(10),
+                            color: const Color.fromARGB(255, 41, 18, 104),
+
+                            boxShadow: [
+                              BoxShadow(
+                                color: const Color(
+                                  0xFF00D9FF,
+                                ).withValues(alpha: 0.9),
+                                spreadRadius: 1,
+                                blurRadius: 8,
+                              ),
+                            ],
+                          ),
+
+                          child: Center(
+                            child: Icon(
+                              Icons.music_off,
+                              color: Colors.cyanAccent,
+                            ),
+                          ),
+                        ),
+
+                        Container(
+                          height: height * 0.04,
+                          width: width * 0.15,
+
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.cyan),
+                            borderRadius: BorderRadius.circular(10),
+                            color: const Color.fromARGB(255, 41, 18, 104),
+
+                            boxShadow: [
+                              BoxShadow(
+                                color: const Color(
+                                  0xFF00D9FF,
+                                ).withValues(alpha: 0.9),
+                                spreadRadius: 1,
+                                blurRadius: 8,
+                              ),
+                            ],
+                          ),
+
+                          child: Center(
+                            child: Text(
+                              "NO",
+
+                              style: GoogleFonts.bangers(
+                                color: Colors.white,
+                                fontSize: 20,
+                                letterSpacing: 1.5,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),
