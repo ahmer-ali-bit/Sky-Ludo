@@ -9,7 +9,18 @@ class Joinroom extends StatefulWidget {
 }
 
 class _MyWidgetState extends State<Joinroom> {
-  var height,width;
+  late double height;
+late double width;
+
+  final TextEditingController roomCodeController =
+      TextEditingController();
+
+  @override
+  void dispose() {
+    roomCodeController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     height=MediaQuery.of(context).size.height;
@@ -18,8 +29,9 @@ class _MyWidgetState extends State<Joinroom> {
 
       
  body: SafeArea(
-   child: Center(
-    
+   child: SizedBox(
+    height: height,
+    width: width,
    child: Stack(
     children: [
     
@@ -39,14 +51,14 @@ class _MyWidgetState extends State<Joinroom> {
    ),
    Container(
       height: height,
-      width: width,
-      color: Colors.deepPurpleAccent.withValues(alpha: 0.7),    ),
+     
+   color: Colors.deepPurpleAccent.withValues(alpha: 0.7),    ),
    Column(
     children: [
       Container(
-        height: height*0.2,
+        height: height*0.13,
         width: width,
-      
+    
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -55,7 +67,7 @@ class _MyWidgetState extends State<Joinroom> {
               width: width,
               
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+             mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                 Row(
                   
@@ -74,17 +86,17 @@ class _MyWidgetState extends State<Joinroom> {
                  border: Border.all(color: Colors.cyan, width: width*0.006),
           boxShadow: [
             BoxShadow(
-              color: Colors.cyan.withOpacity(0.8),
+              color: Colors.cyan.withValues(alpha: 0.8),
               blurRadius: 10,
               spreadRadius: 1,
             ),
             BoxShadow(
-              color: Colors.cyan.withOpacity(0.5),
+              color: Colors.cyan.withValues(alpha: 0.8),
               blurRadius: 25,
               spreadRadius: 5,
             ),
             BoxShadow(
-              color: Colors.cyan.withOpacity(0.3),
+              color: Colors.cyan.withValues(alpha: 0.3),
               blurRadius: 40,
               spreadRadius: 10,
             ),
@@ -113,13 +125,15 @@ class _MyWidgetState extends State<Joinroom> {
           width: width*0.16,
           
           child: Center(child: Text("40",style: 
-                      TextStyle(color: Colors.white),)),
+                      TextStyle(color: Colors.white),)
+                      
+                      ),
               decoration: BoxDecoration(
           color: Colors.black,
           borderRadius:BorderRadius.circular(width*0.1)
               ),      ),
         ),
-                  Positioned(left: width*0.43,top: width*0.007,
+                  Positioned(left: width*0.43,top: width*0.008,
                     child: CircleAvatar(
                       radius: width*0.02,
                       backgroundColor: const Color.fromARGB(255, 89, 255, 92),
@@ -179,7 +193,7 @@ class _MyWidgetState extends State<Joinroom> {
                     ),
                   ),
                   
-                  Positioned(left: width*0.66,top: width*0.005,
+                  Positioned(left: width*0.66,top: width*0.006,
                     child: CircleAvatar(
                       radius: width*0.02,
                       backgroundColor: const Color.fromARGB(255, 89, 255, 92),
@@ -197,7 +211,7 @@ class _MyWidgetState extends State<Joinroom> {
         width: width*0.95,
         child: Stack(
      children: [
-    Positioned(top: width*0.1,left: width*0.01,
+    Positioned(top: width*0.045,left: width*0.01,
       child: Container(
         height: height*0.4,width: width*0.93,
     decoration: BoxDecoration(
@@ -219,7 +233,7 @@ class _MyWidgetState extends State<Joinroom> {
       ),
     ),
     Positioned(
-      top: width*0.06,left: width*0.1,
+      top: 0,left: width*0.1,
       child: Container(
         height: height*0.05,
         width: width*0.23,
@@ -231,7 +245,7 @@ class _MyWidgetState extends State<Joinroom> {
       ),
     ),
     Positioned(
-      top: width*0.06,left: width*0.6,
+      top: 0,left: width*0.6,
       child: Container(
         height: height*0.05,
         width: width*0.23,
@@ -250,18 +264,34 @@ class _MyWidgetState extends State<Joinroom> {
                 child: Center(child: Text("ENTER PRIVATE CODE",style:GoogleFonts.bangers(fontStyle:FontStyle.normal,letterSpacing: width*0.005,color: Colors.cyan,fontSize: width*0.06, ),)),
               ),
       ),
-      Positioned(top: width*0.5,left: width*0.14,
-        child: Container(
-                height: height*0.04,
-                width: width*0.7,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(width*0.02),
-                     color: Colors.white,
-                ),
-             
-                child: Center(child: Text("ENTER PRIVATE CODE HERE",style:GoogleFonts.bangers(fontStyle:FontStyle.normal,letterSpacing: width*0.005, ),)),
-              ),
-      )
+   Positioned(
+  top: width * 0.5,
+  left: width * 0.14,
+  child: Container(
+    height: height * 0.05,
+    width: width * 0.7,
+    decoration: BoxDecoration(
+      color: Colors.white,
+      borderRadius: BorderRadius.circular(width * 0.02),
+    ),
+    child: TextFormField(
+      controller: roomCodeController,
+      textAlign: TextAlign.center,
+      style: GoogleFonts.bangers(
+        fontSize: width * 0.045,
+        color: Colors.black,
+      ),
+      decoration: InputDecoration(
+        hintText: "ENTER PRIVATE CODE HERE",
+        hintStyle: GoogleFonts.bangers(
+          color: Colors.grey,
+          letterSpacing: width * 0.005,
+        ),
+        border: InputBorder.none,
+      ),
+    ),
+  ),
+)
      ],
         ),
       decoration: BoxDecoration(
@@ -270,31 +300,62 @@ class _MyWidgetState extends State<Joinroom> {
         
       ),
       ),
-      Container(
-        height: height*0.05,
-        width: width*0.27,
-                      child: Center(child: Text("JOIN ROOM",style:GoogleFonts.bangers(fontStyle:FontStyle.normal,letterSpacing: width*0.005, color: Colors.white,fontSize: width*0.05),)),
-    decoration: BoxDecoration(
-     color: Colors.green,
-     borderRadius: BorderRadius.circular(width * 0.02),
-     border: Border.all(
-    color: Colors.white,
-    width: 2,
-     ),
-     boxShadow: [
-    BoxShadow(
-      color: Colors.greenAccent,
-      blurRadius: 10,
-      spreadRadius: 2,
-    ),
-    BoxShadow(
-      color: Colors.greenAccent.withOpacity(0.6),
-      blurRadius: 25,
-      spreadRadius: 5,
-    ),
-     ],
-   ),
+      GestureDetector(
+  onTap: () {
+
+    String roomCode = roomCodeController.text.trim();
+
+    print(roomCode);
+
+    if (roomCode.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text("Please enter room code"),
+        ),
+      );
+      return;
+    }
+
+    // Join room logic here
+
+  },
+  child: Container(
+    height: height * 0.06,
+    width: width * 0.4,
+    child: Center(
+      child: Text(
+        "JOIN ROOM",
+        style: GoogleFonts.bangers(
+          fontStyle: FontStyle.normal,
+          letterSpacing: width * 0.005,
+          color: Colors.white,
+          fontSize: width * 0.05,
+        ),
       ),
+    ),
+    decoration: BoxDecoration(
+      color: Colors.green,
+      borderRadius: BorderRadius.circular(width * 0.02),
+      border: Border.all(
+        color: Colors.white,
+        width: 2,
+      ),
+      boxShadow: [
+        BoxShadow(
+          color: Colors.greenAccent,
+          blurRadius: 10,
+          spreadRadius: 2,
+        ),
+        BoxShadow(
+          color: Colors.greenAccent.withValues(alpha: 0.6),
+          blurRadius: 25,
+          spreadRadius: 5,
+        ),
+      ],
+    ),
+  ),
+)
+    
     ],
    ),
    
