@@ -18,27 +18,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter luddo app',
+      theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
+      home: TestScreen(),
 
-      theme: ThemeData(
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: Notice()
->>>>>>>>> Temporary merge branch 2
     );
   }
 }
