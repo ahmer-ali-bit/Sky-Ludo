@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:luddo_app/buddy_request.dart';
 
-import 'package:luddo_app/notice.dart';
+
+
+
 
 void main() {
   runApp(const MyApp());
@@ -14,6 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter luddo app',
+
       theme: ThemeData(
         
         
@@ -32,7 +36,8 @@ class MyApp extends StatelessWidget {
         
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Notice()
+      home:BuddyRequest()
+
     );
   }
 }
