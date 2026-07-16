@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:luddo_app/buddy_request.dart';
+
+
+
 
 
 
@@ -34,10 +38,7 @@ class MyApp extends StatelessWidget {
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
       home: Notice()
-
-      theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: Joinroom(),
-
+>>>>>>>>> Temporary merge branch 2
     );
   }
 }

@@ -544,8 +544,10 @@ late double width;
             Container(
                 height: height*0.4,
         width: width,
-       
-        child: Column(
+  child: ListView(
+    children: [
+           
+        Column(
           children: [
         Container(
             height: height*0.05,
@@ -1112,12 +1114,17 @@ late double width;
           ),
           ],
         ),
+         
+    ],
+  ),
             ),
             Container(
                 height: height*0.4,
         width: width,
-       
-        child: Column(
+  child: ListView(
+    children: [
+           
+         Column(
           children: [
         Container(
             height: height*0.05,
@@ -1688,6 +1695,9 @@ late double width;
           ),
           ],
         ),
+     
+    ],
+  ),
             ),
             Container(
                 height: height*0.4,
