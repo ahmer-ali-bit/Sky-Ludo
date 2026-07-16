@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:luddo_app/buddy_request.dart';
+import 'package:luddo_app/diamonds.dart';
 
 
 
@@ -18,8 +18,26 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter luddo app',
-      theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: TestScreen(),
+
+      theme: ThemeData(
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
+      ),
+      home: Diamonds()
 
     );
   }
