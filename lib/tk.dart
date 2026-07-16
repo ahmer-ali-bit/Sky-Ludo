@@ -33,7 +33,7 @@ class _Selectcolor_editState extends State<Selectcolor_edit> {
                 color: Colors.deepPurpleAccent.withValues(alpha: 0.7),
                 child: Column(
                   children: [
-                    Container(
+                    SizedBox(
                       height: height * 0.08,
                       width: width,
 
@@ -57,7 +57,7 @@ class _Selectcolor_editState extends State<Selectcolor_edit> {
                       ),
                     ),
                     SizedBox(height: height * 0.04),
-                    Container(
+                    SizedBox(
                       height: height * 0.1,
                       width: width,
 
@@ -151,7 +151,7 @@ class _Selectcolor_editState extends State<Selectcolor_edit> {
                               ),
                             ),
                           ),
-                          Container(
+                          SizedBox(
                             height: height * 0.06,
                             width: width * 0.5,
 
@@ -222,7 +222,7 @@ class _Selectcolor_editState extends State<Selectcolor_edit> {
                       decoration: BoxDecoration(
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(0.25),
+                            color: Colors.black.withValues(alpha: 0.25),
                             blurRadius: 10,
                             spreadRadius: 2,
                             offset: Offset(0, 4),
@@ -257,6 +257,5 @@ class _Selectcolor_editState extends State<Selectcolor_edit> {
         ),
       ),
     );
-  
   }
 }

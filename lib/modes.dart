@@ -118,7 +118,7 @@ class _ModesState extends State<Modes> {
                       ],
                     ),
 
-                    Container(
+                    SizedBox(
                       height: height * 0.7,
                       width: width,
                       // decoration: BoxDecoration(color: Colors.amber),

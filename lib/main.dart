@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:luddo_app/notice.dart';
+import 'package:luddo_app/diamonds.dart';
 
 
 
@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
         
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Notice()
+      home: Diamonds()
 
     );
   }
