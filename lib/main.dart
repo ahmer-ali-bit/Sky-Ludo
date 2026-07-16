@@ -5,6 +5,7 @@ import 'package:luddo_app/buddy_request.dart';
 
 
 
+
 void main() {
   runApp(const MyApp());
 }
@@ -36,8 +37,8 @@ class MyApp extends StatelessWidget {
         
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home:BuddyRequest()
-
+      home: Notice()
+>>>>>>>>> Temporary merge branch 2
     );
   }
 }
