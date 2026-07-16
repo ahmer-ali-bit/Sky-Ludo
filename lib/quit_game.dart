@@ -71,7 +71,7 @@ class _QuitGameState extends State<QuitGame> {
                   ),
 
                   Expanded(child: Container()),
-                  Container(
+                  SizedBox(
                     height: height * 0.06,
                     width: width,
 

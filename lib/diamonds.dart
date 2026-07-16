@@ -41,7 +41,7 @@ class _DiamondsState extends State<Diamonds> {
 
               color: Colors.deepPurpleAccent.withValues(alpha: 0.7),
             ),
-            Container(
+            SizedBox(
               height: height,
               width: width,
 
@@ -96,14 +96,14 @@ class _DiamondsState extends State<Diamonds> {
                   SizedBox(height: height * 0.01),
                   Row(
                     children: [
-                      Container(
+                      SizedBox(
                         height: height * 0.06,
                         width: width,
 
                         child: Row(
                           children: [
                             SizedBox(width: width * 0.16),
-                            Container(
+                            SizedBox(
                               height: height * 0.05,
                               width: width * 0.29,
 
@@ -174,7 +174,7 @@ class _DiamondsState extends State<Diamonds> {
                               ),
                             ),
                             SizedBox(width: width * 0.03),
-                            Container(
+                            SizedBox(
                               height: height * 0.05,
                               width: width * 0.35,
 
@@ -249,7 +249,7 @@ class _DiamondsState extends State<Diamonds> {
                       ),
                     ],
                   ),
-                  Container(
+                  SizedBox(
                     height: height * 0.12,
                     width: width,
 
@@ -349,7 +349,7 @@ class _DiamondsState extends State<Diamonds> {
                       ],
                     ),
                   ),
-                  Container(
+                  SizedBox(
                     height: height * 0.1,
                     width: width * 0.9,
 
@@ -381,14 +381,14 @@ class _DiamondsState extends State<Diamonds> {
                                       BoxShadow(
                                         color: const Color(
                                           0xFF00E5FF,
-                                        ).withOpacity(0.8),
+                                        ).withValues(alpha: 0.8),
                                         blurRadius: 15,
                                         spreadRadius: 2,
                                       ),
                                       BoxShadow(
                                         color: const Color(
                                           0xFF00E5FF,
-                                        ).withOpacity(0.4),
+                                        ).withValues(alpha: 0.4),
                                         blurRadius: 25,
                                         spreadRadius: 3,
                                       ),
@@ -438,14 +438,14 @@ class _DiamondsState extends State<Diamonds> {
                                       BoxShadow(
                                         color: const Color(
                                           0xFF00E5FF,
-                                        ).withOpacity(0.8),
+                                        ).withValues(alpha: 0.8),
                                         blurRadius: 15,
                                         spreadRadius: 2,
                                       ),
                                       BoxShadow(
                                         color: const Color(
                                           0xFF00E5FF,
-                                        ).withOpacity(0.4),
+                                        ).withValues(alpha: 0.4),
                                         blurRadius: 25,
                                         spreadRadius: 3,
                                       ),
@@ -496,14 +496,14 @@ class _DiamondsState extends State<Diamonds> {
                                       BoxShadow(
                                         color: const Color(
                                           0xFF00E5FF,
-                                        ).withOpacity(0.8),
+                                        ).withValues(alpha: 0.8),
                                         blurRadius: 15,
                                         spreadRadius: 2,
                                       ),
                                       BoxShadow(
                                         color: const Color(
                                           0xFF00E5FF,
-                                        ).withOpacity(0.4),
+                                        ).withValues(alpha: 0.4),
                                         blurRadius: 25,
                                         spreadRadius: 3,
                                       ),
@@ -553,14 +553,14 @@ class _DiamondsState extends State<Diamonds> {
                                       BoxShadow(
                                         color: const Color(
                                           0xFF00E5FF,
-                                        ).withOpacity(0.8),
+                                        ).withValues(alpha: 0.8),
                                         blurRadius: 15,
                                         spreadRadius: 2,
                                       ),
                                       BoxShadow(
                                         color: const Color(
                                           0xFF00E5FF,
-                                        ).withOpacity(0.4),
+                                        ).withValues(alpha: 0.4),
                                         blurRadius: 25,
                                         spreadRadius: 3,
                                       ),
@@ -590,7 +590,7 @@ class _DiamondsState extends State<Diamonds> {
                     ),
                   ),
                   Expanded(
-                    child: Container(
+                    child: SizedBox(
                       height: height * 0.40,
                       width: width,
 
@@ -613,7 +613,7 @@ class _DiamondsState extends State<Diamonds> {
                             child: ListView(
                               scrollDirection: Axis.vertical,
                               children: [
-                                Container(
+                                SizedBox(
                                   height: height * 0.4,
                                   width: width,
                                   child: Column(
@@ -713,9 +713,12 @@ class _DiamondsState extends State<Diamonds> {
                                                         ),
                                                         boxShadow: [
                                                           BoxShadow(
-                                                            color: const Color(
-                                                              0xFF2E3600,
-                                                            ).withOpacity(0.55),
+                                                            color:
+                                                                const Color(
+                                                                  0xFF2E3600,
+                                                                ).withValues(
+                                                                  alpha: 0.55,
+                                                                ),
                                                             blurRadius: 6,
                                                             offset:
                                                                 const Offset(
@@ -865,9 +868,12 @@ class _DiamondsState extends State<Diamonds> {
                                                         ),
                                                         boxShadow: [
                                                           BoxShadow(
-                                                            color: const Color(
-                                                              0xFF2E3600,
-                                                            ).withOpacity(0.55),
+                                                            color:
+                                                                const Color(
+                                                                  0xFF2E3600,
+                                                                ).withValues(
+                                                                  alpha: 0.55,
+                                                                ),
                                                             blurRadius: 6,
                                                             offset:
                                                                 const Offset(
@@ -1016,9 +1022,12 @@ class _DiamondsState extends State<Diamonds> {
                                                         ),
                                                         boxShadow: [
                                                           BoxShadow(
-                                                            color: const Color(
-                                                              0xFF2E3600,
-                                                            ).withOpacity(0.55),
+                                                            color:
+                                                                const Color(
+                                                                  0xFF2E3600,
+                                                                ).withValues(
+                                                                  alpha: 0.55,
+                                                                ),
                                                             blurRadius: 6,
                                                             offset:
                                                                 const Offset(
@@ -1167,9 +1176,12 @@ class _DiamondsState extends State<Diamonds> {
                                                         ),
                                                         boxShadow: [
                                                           BoxShadow(
-                                                            color: const Color(
-                                                              0xFF2E3600,
-                                                            ).withOpacity(0.55),
+                                                            color:
+                                                                const Color(
+                                                                  0xFF2E3600,
+                                                                ).withValues(
+                                                                  alpha: 0.55,
+                                                                ),
                                                             blurRadius: 6,
                                                             offset:
                                                                 const Offset(
@@ -1318,9 +1330,12 @@ class _DiamondsState extends State<Diamonds> {
                                                         ),
                                                         boxShadow: [
                                                           BoxShadow(
-                                                            color: const Color(
-                                                              0xFF2E3600,
-                                                            ).withOpacity(0.55),
+                                                            color:
+                                                                const Color(
+                                                                  0xFF2E3600,
+                                                                ).withValues(
+                                                                  alpha: 0.55,
+                                                                ),
                                                             blurRadius: 6,
                                                             offset:
                                                                 const Offset(
@@ -1469,9 +1484,12 @@ class _DiamondsState extends State<Diamonds> {
                                                         ),
                                                         boxShadow: [
                                                           BoxShadow(
-                                                            color: const Color(
-                                                              0xFF2E3600,
-                                                            ).withOpacity(0.55),
+                                                            color:
+                                                                const Color(
+                                                                  0xFF2E3600,
+                                                                ).withValues(
+                                                                  alpha: 0.55,
+                                                                ),
                                                             blurRadius: 6,
                                                             offset:
                                                                 const Offset(
@@ -1531,7 +1549,7 @@ class _DiamondsState extends State<Diamonds> {
                               ],
                             ),
                           ),
-                          Container(
+                          SizedBox(
                             height: height * 0.4,
                             width: width,
 
@@ -1618,7 +1636,7 @@ class _DiamondsState extends State<Diamonds> {
                                                     BoxShadow(
                                                       color: const Color(
                                                         0xFF2E3600,
-                                                      ).withOpacity(0.55),
+                                                      ).withValues(alpha: 0.55),
                                                       blurRadius: 6,
                                                       offset: const Offset(
                                                         0,
@@ -1751,7 +1769,7 @@ class _DiamondsState extends State<Diamonds> {
                                                     BoxShadow(
                                                       color: const Color(
                                                         0xFF2E3600,
-                                                      ).withOpacity(0.55),
+                                                      ).withValues(alpha: 0.55),
                                                       blurRadius: 6,
                                                       offset: const Offset(
                                                         0,
@@ -1884,7 +1902,7 @@ class _DiamondsState extends State<Diamonds> {
                                                     BoxShadow(
                                                       color: const Color(
                                                         0xFF2E3600,
-                                                      ).withOpacity(0.55),
+                                                      ).withValues(alpha: 0.55),
                                                       blurRadius: 6,
                                                       offset: const Offset(
                                                         0,
@@ -2017,7 +2035,7 @@ class _DiamondsState extends State<Diamonds> {
                                                     BoxShadow(
                                                       color: const Color(
                                                         0xFF2E3600,
-                                                      ).withOpacity(0.55),
+                                                      ).withValues(alpha: 0.55),
                                                       blurRadius: 6,
                                                       offset: const Offset(
                                                         0,
@@ -2153,7 +2171,7 @@ class _DiamondsState extends State<Diamonds> {
                                                     BoxShadow(
                                                       color: const Color(
                                                         0xFF2E3600,
-                                                      ).withOpacity(0.55),
+                                                      ).withValues(alpha: 0.55),
                                                       blurRadius: 6,
                                                       offset: const Offset(
                                                         0,
@@ -2287,7 +2305,7 @@ class _DiamondsState extends State<Diamonds> {
                                                     BoxShadow(
                                                       color: const Color(
                                                         0xFF2E3600,
-                                                      ).withOpacity(0.55),
+                                                      ).withValues(alpha: 0.55),
                                                       blurRadius: 6,
                                                       offset: const Offset(
                                                         0,
@@ -2342,7 +2360,7 @@ class _DiamondsState extends State<Diamonds> {
                               ],
                             ),
                           ),
-                          Container(
+                          SizedBox(
                             height: height * 0.4,
                             width: width,
 
@@ -2429,7 +2447,7 @@ class _DiamondsState extends State<Diamonds> {
                                                     BoxShadow(
                                                       color: const Color(
                                                         0xFF2E3600,
-                                                      ).withOpacity(0.55),
+                                                      ).withValues(alpha: 0.55),
                                                       blurRadius: 6,
                                                       offset: const Offset(
                                                         0,
@@ -2564,7 +2582,7 @@ class _DiamondsState extends State<Diamonds> {
                                                     BoxShadow(
                                                       color: const Color(
                                                         0xFF2E3600,
-                                                      ).withOpacity(0.55),
+                                                      ).withValues(alpha: 0.55),
                                                       blurRadius: 6,
                                                       offset: const Offset(
                                                         0,
@@ -2699,7 +2717,7 @@ class _DiamondsState extends State<Diamonds> {
                                                     BoxShadow(
                                                       color: const Color(
                                                         0xFF2E3600,
-                                                      ).withOpacity(0.55),
+                                                      ).withValues(alpha: 0.55),
                                                       blurRadius: 6,
                                                       offset: const Offset(
                                                         0,
@@ -2833,7 +2851,7 @@ class _DiamondsState extends State<Diamonds> {
                                                     BoxShadow(
                                                       color: const Color(
                                                         0xFF2E3600,
-                                                      ).withOpacity(0.55),
+                                                      ).withValues(alpha: 0.55),
                                                       blurRadius: 6,
                                                       offset: const Offset(
                                                         0,
@@ -2889,7 +2907,7 @@ class _DiamondsState extends State<Diamonds> {
                               ],
                             ),
                           ),
-                          Container(
+                          SizedBox(
                             height: height * 0.4,
                             width: width,
 
@@ -2976,7 +2994,7 @@ class _DiamondsState extends State<Diamonds> {
                                                     BoxShadow(
                                                       color: const Color(
                                                         0xFF2E3600,
-                                                      ).withOpacity(0.55),
+                                                      ).withValues(alpha: 0.55),
                                                       blurRadius: 6,
                                                       offset: const Offset(
                                                         0,
@@ -3109,7 +3127,7 @@ class _DiamondsState extends State<Diamonds> {
                                                     BoxShadow(
                                                       color: const Color(
                                                         0xFF2E3600,
-                                                      ).withOpacity(0.55),
+                                                      ).withValues(alpha: 0.55),
                                                       blurRadius: 6,
                                                       offset: const Offset(
                                                         0,
@@ -3242,7 +3260,7 @@ class _DiamondsState extends State<Diamonds> {
                                                     BoxShadow(
                                                       color: const Color(
                                                         0xFF2E3600,
-                                                      ).withOpacity(0.55),
+                                                      ).withValues(alpha: 0.55),
                                                       blurRadius: 6,
                                                       offset: const Offset(
                                                         0,
@@ -3304,13 +3322,13 @@ class _DiamondsState extends State<Diamonds> {
                   SizedBox(height: height * 0.049),
                   ClipPath(
                     clipper: StoreClipper(),
-                    child: Container(
+                    child: SizedBox(
                       height: height * 0.1,
                       width: width,
 
                       child: Column(
                         children: [
-                          Container(
+                          SizedBox(
                             height: height * 0.1,
                             width: width,
 
